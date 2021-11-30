@@ -16,6 +16,11 @@ public class AccountController {
 	public static List<Contact> getContactList2(){
 		Set<String> accountSet = new Set<String>();
 		Account account2 = new Account(); 
+		
+		  @AuraEnabled
+	public static List<Contact> getContactList3(){
+		Set<String> accountSet = new Set<String>();
+		Account account2 = new Account(); 
 
 	myCust__c cs = new myCust__c();
 	
