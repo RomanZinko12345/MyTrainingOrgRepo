@@ -1,0 +1,22 @@
+<template>
+    <div if:false={ready} id="waiting"> Loading...</div>
+    <div if:true={ready} id="show">
+        <div>Name: {name}</div>
+        <div>Description: {description}</div>
+        <div>Category: {category}</div>
+        <div>Material: {material}</div>
+        <div>Price: {price}</div>
+        <div><img src={pictureUrl}/></div>
+    </div>
+
+    <div>From Parent Component
+        <p>{bike.name}</p>
+      <div> bike age :{bike.age}</div>
+
+    </div>
+
+
+    <lightning-button variant="base" label="Base" title="Looks like a link" onclick={newFun} class="slds-m-left_x-small"></lightning-button>
+
+
+</template>

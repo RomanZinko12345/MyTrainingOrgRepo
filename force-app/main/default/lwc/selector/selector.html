@@ -1,0 +1,18 @@
+<template>
+    <div class="wrapper">
+    <header class="header">Select a Bike</header>
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+         <c-list onshowbikedetail={handleBikeDetail}> </c-list>
+        </main>
+        <aside class="sidebar-second">
+            <c-detail product-id={selectedBikeId}></c-detail>
+        </aside>
+        </div>
+    </section>
+        <div class="slds-card slds-box">
+
+        </div>
+    </div>
+</template>
