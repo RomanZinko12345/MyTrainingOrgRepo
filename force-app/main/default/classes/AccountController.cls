@@ -1,42 +1,29 @@
 public class AccountController {
 
-
-   @AuraEnabled
+	public static Set<String> accountSet = new Set<String>();
+  
+	@AuraEnabled
    public static List<Account> getAccountList(){
 	   return [SELECT id , Name from Account limit 10] ;
 
    }
-
-	@AuraEnabled
-	public static List<Contact> getContactList(){
-		Set<String> accountSet = new Set<String>();
-		Account account2 = new Account();
-         
-        @AuraEnabled
+  
+   for(Account account : getAccountList()){
+	accountSet.add(account.Id);
+}
+  
+	
+ 
+   @AuraEnabled
 	public static List<Contact> getContactList2(){
-		Set<String> accountSet = new Set<String>();
-		Account account2 = new Account(); 
 		
-		  @AuraEnabled
-	public static List<Contact> getContactList3(){
-		Set<String> accountSet = new Set<String>();
-		Account account2 = new Account(); 
-
-	myCust__c cs = new myCust__c();
-	
-	
-		
-	
 		for(Account account : getAccountList()){
 			accountSet.add(account.Id);
-			
-		
 		}
-
-		return [SELECT id , FirstName , LastName from Contact WHERE AccountId IN : accountSet];
+		Account account2 = new Account();
+         return null;
 	}
-    
-	
-	
 
+
+	
 }
