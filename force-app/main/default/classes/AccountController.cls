@@ -11,6 +11,11 @@ public class AccountController {
        
 
    //added cooment 
+
+
+   public static void creteContact(){
+	   insert new Contact(LastName = 'Roman');
+   } 
   
 	
  
