@@ -4,6 +4,7 @@ global with sharing class ApexSecurityRest {
     public static String name4444444444444aaaa2;
     public static String name4444444444444aaaa3;
     public static String name4444444444444aaaa66;
+    public static String name4444444444444aaaa67;
     @HttpGet
     global static Contact doGet() {
         Id recordId = RestContext.request.params.get('id');
