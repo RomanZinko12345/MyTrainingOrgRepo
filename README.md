@@ -21,3 +21,4 @@ The `sfdx-project.json` file contains useful configuration information for your 
 ## Additional Info
 
 ## Additional Fixes
+something new one the same line for checking conflicts
